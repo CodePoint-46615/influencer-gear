@@ -9,7 +9,7 @@
 
 /* shared style */
 body{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .display-flex{
@@ -24,6 +24,14 @@ body{
     color: #3A3A3A;
 }
 
+.primary-btn{
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+}
 /* nav styles */
 
 .navbar{
@@ -49,6 +57,42 @@ body{
     text-decoration: none;
     color: #3A3A3A;
     font-weight: 600;
+}
+
+/* banner related styles */
+.banner{
+    gap: 133px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.banner-content{
+    width: 582px;
+}
+
+.banner-title{
+    font-weight: bold;
+    font-size: 3.75rem;
+    margin-bottom: 16px;
+}
+
+.banner-description{
+    font-weight: 600;
+
+}
+
+.banner-button{
+    border-radius: 41px;
+}
+
+.banner-img{
+    background-image: url('../images/Circle\ design.svg');
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-right: 33px;
+    padding-left: 2px;
+    width: 440px;
+    height: 414px;
 }
 
 /* Responsive Part */
