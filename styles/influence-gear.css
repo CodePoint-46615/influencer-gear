@@ -64,6 +64,10 @@ body{
     gap: 133px;
     align-items: center;
     margin-top: 50px;
+    background-image: url('../images/Circle\ design.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 40%;
 }
 
 .banner-content{
@@ -86,25 +90,64 @@ body{
 }
 
 .banner-img{
-    background-image: url('../images/Circle\ design.svg');
-    padding-top: 30px;
-    padding-bottom: 33px;
-    padding-right: 33px;
-    padding-left: 2px;
-    width: 440px;
-    height: 414px;
+    padding: 30px 33px 33px 2px;
+    
+}
+
+/* icon section styles starts form here */
+.icon-container{
+    margin-top: 100px;
+}
+.icon{
+    gap: 60px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.06);   
+    padding: 35px 60px;
 }
 
 /* Responsive Part */
 /* For Mobile Device */
 @media screen and (max-width: 576px) {
-    .navbar
+    .navbar,
+    .icon
     {
         flex-direction: column;
     }
 
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+        background-position: center top;
+        background-size: 70%;
+    }
     .nav-content{
        flex-direction: column;
        justify-content: center;
     }
+
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-img{
+        width: 60%;
+        padding: 51px 33px 16px 22px;
+    }
+
+    .icon{
+        width: 50%;
+        align-items: center;
+    }
+
+    .icon-container{
+        justify-items: center;
+    }
+}
+
+/* responsive for medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+   
 }
