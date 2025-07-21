@@ -163,6 +163,24 @@ body{
     gap: 30px;
 }
 
+/* feature-section */
+.feature-content{
+    gap: 96px;
+    align-items: center;
+    margin-top: 100px;
+}
+.feature-title{
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+.feature-description{
+    font-weight: bold;
+    color: #6C6C6C;
+    width: 500px;
+}
+
 /* Responsive Part */
 /* For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -172,7 +190,8 @@ body{
         flex-direction: column;
     }
 
-    .banner{
+    .banner
+    {
         flex-direction: column-reverse;
         gap: 10px;
         background-position: center top;
@@ -208,6 +227,29 @@ body{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+
+    .feature-content{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .feature-content img{
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature-msg{
+        text-align: center;
+    }
+
+    .feature-title{
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+    .feature-description{
+        width: 100%;
+    }
+    
 }
 
 /* responsive for medium size device */
